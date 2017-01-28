@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="2">Level 3</layout>
+        <layout order="3">Level 4</layout>
+        <layout order="4">Stage</layout>
+        <layout order="5">Main</layout>
+        <layout active="1" order="8">Level 2</layout>
+        <layout order="10">Level 1</layout>
+        <event-sheet order="0">Event Main</event-sheet>
+        <event-sheet order="1">Event Over</event-sheet>
+        <event-sheet order="6">Event Stage</event-sheet>
+        <event-sheet order="7">Event Level 2</event-sheet>
+        <event-sheet order="9">Event Level 3</event-sheet>
+        <event-sheet order="11">Event Level 1</event-sheet>
+        <event-sheet order="12">Event Level 4</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="1" name="item" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Player/" />
+        <folder expanded="1" path="animation-folder/Desk/" />
+        <folder expanded="1" path="animation-folder/Light/" />
+        <folder expanded="1" path="animation-folder/Chair/" />
+        <folder expanded="1" path="animation-folder/Prisoner/" />
+        <folder expanded="1" path="animation-folder/Menu/" />
+        <folder expanded="1" path="animation-folder/Food/" />
+        <folder expanded="1" path="animation-folder/Drawer/" />
+        <folder expanded="1" path="animation-folder/Clothe/" />
+        <folder expanded="1" path="animation-folder/Spoon/" />
+        <folder expanded="1" path="animation-folder/Key/" />
+        <folder expanded="1" path="animation-folder/Chef/" />
+        <folder expanded="1" path="animation-folder/Border/" />
+        <folder expanded="1" path="animation-folder/Door/" />
+        <folder expanded="1" path="animation-folder/Police/" />
+        <folder expanded="1" path="animation-folder/Signt/" />
+        <folder expanded="1" path="animation-folder/Slot/" />
+        <folder expanded="1" path="animation-folder/Item_Slot/" />
+        <folder expanded="1" path="animation-folder/stair/" />
+        <folder expanded="1" path="animation-folder/floor2/" />
+        <folder expanded="1" path="animation-folder/floorground/" />
+        <folder expanded="1" path="animation-folder/door_exit/" />
+        <folder expanded="1" path="animation-folder/box/" />
+        <folder expanded="1" path="animation-folder/door_hide/" />
+        <folder expanded="1" path="animation-folder/switch/" />
+        <folder expanded="1" path="animation-folder/exit/" />
+        <folder expanded="1" path="animation-folder/jail1/" />
+        <folder expanded="1" path="animation-folder/jail2/" />
+        <folder expanded="1" path="animation-folder/jail3/" />
+        <folder expanded="1" path="animation-folder/floor3/" />
+        <folder expanded="1" path="animation-folder/camera/" />
+        <folder expanded="1" path="animation-folder/lv1_hwp1/" />
+        <folder expanded="1" path="animation-folder/select/" />
+        <folder expanded="1" path="animation-folder/balloon1/" />
+        <folder expanded="1" path="animation-folder/lv2_hwp2/" />
+        <folder expanded="1" path="animation-folder/Border2/" />
+        <folder expanded="1" path="animation-folder/Building/" />
+        <folder expanded="1" path="animation-folder/Player3/" />
+        <folder expanded="1" path="animation-folder/Door3/" />
+        <folder expanded="1" path="animation-folder/Police3/" />
+        <folder expanded="1" path="animation-folder/Prison/" />
+        <folder expanded="1" path="animation-folder/Police4/" />
+        <folder expanded="1" path="animation-folder/Car/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Grass02/" />
+        <folder expanded="1" path="animation-folder/Grass04/" />
+        <folder expanded="1" path="animation-folder/Group/" />
+        <folder expanded="1" path="animation-folder/Signt3/" />
+        <folder expanded="1" path="animation-folder/Basketball/" />
+        <folder expanded="1" path="animation-folder/People/" />
+        <folder expanded="1" path="animation-folder/btn_newgame/" />
+        <folder expanded="1" path="animation-folder/btn_stage/" />
+        <folder expanded="1" path="animation-folder/btn_stage1/" />
+        <folder expanded="1" path="animation-folder/btn_stage2/" />
+        <folder expanded="1" path="animation-folder/btn_stage3/" />
+        <folder expanded="1" path="animation-folder/btn_stage4/" />
+        <folder expanded="1" path="animation-folder/btn_gomain/" />
+        <folder expanded="1" path="animation-folder/btn_again/" />
+        <folder expanded="1" path="animation-folder/btn_continue/" />
+        <folder expanded="1" path="animation-folder/pause_txt/" />
+        <folder expanded="1" path="animation-folder/Border3/" />
+        <folder expanded="1" path="animation-folder/balloon2/" />
+        <folder expanded="1" path="animation-folder/lv3_hwp3/" />
+        <folder expanded="1" path="animation-folder/lv4_hwp4/" />
+        <folder expanded="1" path="animation-folder/btn_continue_main/" />
+    </folders-expanded>
+</c2uistate>

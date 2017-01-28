@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Over</name>
+    <events>
+        <event-block sid="698613967681855">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="435253780891738" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">btn_again</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="805290636812531" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;button-3&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="33" name="Stop all" sid="158191525221815" type="Audio" />
+                <action id="-25" name="Go to layout (by name)" sid="524277098684520" type="System">
+                    <param id="0" name="Layout">&quot;Level &quot;&amp;lvplay</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="403518466879387" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="366029578058354">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="450075451672121" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">btn_gomain</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="799549538004063" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="352649735047777" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;button-3&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="562302555769917" type="Audio">
+                    <param id="0" name="Tag">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="586484563462956">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="876459513792517" type="System" />
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="647710680431486" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;music&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+                <action id="33" name="Stop all" sid="241708340755564" type="Audio" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Stage</name>
+    <events>
+        <event-block sid="277628640193720">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="751713808712305" type="System">
+                    <param id="0" name="Variable">Flv1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-27" name="Set effect enabled" sid="266536430440662" type="btn_stage1">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Grayscale&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="208734632119943">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="870116658285585" type="System">
+                    <param id="0" name="Variable">Flv2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-27" name="Set effect enabled" sid="991276704747020" type="btn_stage2">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Grayscale&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="704919455828691">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="683485065612741" type="System">
+                    <param id="0" name="Variable">Flv3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-27" name="Set effect enabled" sid="491021970160981" type="btn_stage3">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Grayscale&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="194154502976251">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="161057271126680" type="System">
+                    <param id="0" name="Variable">Flv4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-27" name="Set effect enabled" sid="893294501285154" type="btn_stage4">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Grayscale&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="202711340809993">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="205231604970336" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">btn_stage1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="150390271798090" type="System">
+                    <param id="0" name="Variable">Flv1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="220432717597349" type="System">
+                    <param id="0" name="Layout">Level 1</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="675590178275115" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;button-3&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="521785159948423" type="Audio">
+                    <param id="0" name="Tag">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="649314576133567">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="777891277515477" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">btn_stage2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="165009688715702" type="System">
+                    <param id="0" name="Variable">Flv2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="497990262678555" type="System">
+                    <param id="0" name="Layout">Level 2</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="165691338957397" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;button-3&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="559075629579749" type="Audio">
+                    <param id="0" name="Tag">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="501612615041304">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="591813997227309" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">btn_stage3</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="991098459590554" type="System">
+                    <param id="0" name="Variable">Flv3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="154477917286468" type="System">
+                    <param id="0" name="Layout">Level 3</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="531972886469988" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;button-3&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="383812436417525" type="Audio">
+                    <param id="0" name="Tag">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="470233935724272">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="659622751868261" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">btn_stage4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="491430277716964" type="System">
+                    <param id="0" name="Variable">Flv4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="451763055499064" type="System">
+                    <param id="0" name="Layout">Level 4</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="187155365272373" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;button-3&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="245390806459254" type="Audio">
+                    <param id="0" name="Tag">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="721590345370072">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="139437114644936" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">btn_gomain</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="821415720740694" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;button-3&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="616300505949791" type="Audio">
+                    <param id="0" name="Tag">&quot;music&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="439657876466749" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="937630156986774">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="180887707278621" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="201963954555472" type="System" />
+                <action id="5" name="Check item exists" sid="425265049582364" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv1&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="865090276119543" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv2&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="872816782222690" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv3&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="534587299382347" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv4&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="115094006738048">
+            <conditions>
+                <condition id="9" name="On item exists" sid="378926514426492" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="353497650676389" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="264515955246310">
+            <conditions>
+                <condition id="9" name="On item exists" sid="960620595677409" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="432183303809907" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="645689874454798">
+            <conditions>
+                <condition id="9" name="On item exists" sid="254424844389364" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="158803365034896" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv3&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="310003573960659">
+            <conditions>
+                <condition id="9" name="On item exists" sid="878911692197858" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv4&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="382576568778486" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv4&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="429205587047945">
+            <conditions>
+                <condition id="1" name="On item get" sid="134219828214977" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="560196987545721" type="System">
+                    <param id="0" name="Variable">Flv1</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="690806122227647">
+            <conditions>
+                <condition id="1" name="On item get" sid="215286765674222" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="120218301890524" type="System">
+                    <param id="0" name="Variable">Flv2</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="791024448482220">
+            <conditions>
+                <condition id="1" name="On item get" sid="660079897872584" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="506895385103026" type="System">
+                    <param id="0" name="Variable">Flv3</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="768288156519856">
+            <conditions>
+                <condition id="1" name="On item get" sid="409377596854566" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv4&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="213769207126758" type="System">
+                    <param id="0" name="Variable">Flv4</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="706926254806818">
+            <conditions>
+                <condition id="10" name="On item missing" sid="464837919995933" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="651861308666200" type="System">
+                    <param id="0" name="Variable">Flv1</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="214463666573569">
+            <conditions>
+                <condition id="10" name="On item missing" sid="643327512738766" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="137623997401333" type="System">
+                    <param id="0" name="Variable">Flv2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="299088068526330">
+            <conditions>
+                <condition id="10" name="On item missing" sid="383561476498167" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="951667985878607" type="System">
+                    <param id="0" name="Variable">Flv3</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="651891351830165">
+            <conditions>
+                <condition id="10" name="On item missing" sid="248891384905012" type="LocalStorage">
+                    <param id="0" name="Key">&quot;FirstLv4&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="234961663206485" type="System">
+                    <param id="0" name="Variable">Flv4</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

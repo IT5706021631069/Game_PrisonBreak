@@ -1,0 +1,1607 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2opuoegs2t2iy</unique-id>
+    <saved-with-version>23300</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="grayscale">Grayscale</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>800</width>
+        <height>600</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Main</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Internet Explorer</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="BG" sid="476367912797533">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\STAGE_02.png" />
+        </object-type>
+        <object-type name="Floors" sid="533391453100428">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="539463127680245">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\FLOOR.png" />
+        </object-type>
+        <object-type name="Player" sid="750214615616724">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="573800921708473">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="941854939902476">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="718456041815163">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="706154250503330" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\PLAYER\STAND_PLAYER (1).png">
+                        <image-point name="Imagepoint 1" x="0.90625" y="0" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\PLAYER\STAND_PLAYER (2).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\PLAYER\STAND_PLAYER (3).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\PLAYER\STAND_PLAYER (4).png" />
+                </animation>
+                <animation framecount="4" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="551288909645127" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\PLAYER\RUN_PLAYER (1).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\PLAYER\RUN_PLAYER (2).png" />
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\PLAYER\RUN_PLAYER (3).png" />
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\PLAYER\RUN_PLAYER (4).png" />
+                </animation>
+                <animation framecount="3" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="225884288104120" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.511628" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\PLAYER\JUMP_Player (1).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\PLAYER\JUMP_Player (2).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\PLAYER\JUMP_Player (3).png" />
+                </animation>
+                <animation framecount="2" loop="0" name="crouch" pingpong="0" repeatcount="1" repeatto="0" sid="295309456829134" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.512821" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\PLAYER\player_0001s_0001_Layer-26-copy.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\PLAYER\player_0001s_0000_Layer-32.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="960306553257915">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Desk" sid="261301762139051">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="837192148243221" speed="5">
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\DESK.png">
+                        <collision-poly>
+                            <point x="0.131687" y="0.152381" />
+                            <point x="0.497942" y="0" />
+                            <point x="0.658436" y="0.395238" />
+                            <point x="0.962963" y="0.5" />
+                            <point x="0.950617" y="0.942857" />
+                            <point x="0.497942" y="0.542857" />
+                            <point x="0.0164609" y="0.980952" />
+                            <point x="0.0164609" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Light" sid="608021744668641">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="901801543237853" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\LIGHT.png">
+                        <collision-poly>
+                            <point x="0.140845" y="0.384615" />
+                            <point x="0.859155" y="0.384615" />
+                            <point x="1" y="0.5" />
+                            <point x="0.84507" y="0.576923" />
+                            <point x="0.15493" y="0.576923" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Table" sid="301015042053465">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\TEBEL.png" />
+        </object-type>
+        <object-type name="Chair" sid="235025429338249">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985431646493341" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\CHAIR.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.557692" y="0.491228" />
+                            <point x="0.557692" y="0.596491" />
+                            <point x="0.5" y="1" />
+                            <point x="0.442308" y="0.596491" />
+                            <point x="0.442308" y="0.491228" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Prisoner" sid="977750062092397">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="329692440835860" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\M1.png">
+                        <collision-poly>
+                            <point x="0.308824" y="0.154412" />
+                            <point x="0.5" y="0" />
+                            <point x="0.676471" y="0.161765" />
+                            <point x="0.941176" y="0.5" />
+                            <point x="0.75" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.235294" y="0.882353" />
+                            <point x="0.0147059" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Menu" sid="363434963143243">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="360119484335693" speed="5">
+                    <frame duration="1" hotspotX="0.50211" hotspotY="0.505155" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\MENU.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Food" sid="579408720575501">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="795364332988045" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\FOOD1.png" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.526316" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\FOOD2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\FOOD3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Drawer" sid="762826749683017">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="618325143688496" speed="5">
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\16148616761_ede80e123c_b.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.495495" y="0.927632" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Clothe" sid="631215911088092">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="834614322959591" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\clothesHIDE.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.269231" />
+                            <point x="0.5" y="0" />
+                            <point x="0.910714" y="0.192308" />
+                            <point x="0.964286" y="0.5" />
+                            <point x="0.946429" y="0.884615" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0357143" y="0.923077" />
+                            <point x="0.0178571" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Spoon" sid="973272466492855">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="SetPart" sid="983632075151384" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="252103686325804">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="336879517184612">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="944407966421856">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="918177981240976" speed="5">
+                    <frame duration="1" hotspotX="0.507937" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\spoon.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.0555556" />
+                            <point x="0.492063" y="0" />
+                            <point x="0.857143" y="0.0555556" />
+                            <point x="0.714286" y="0.5" />
+                            <point x="0.857143" y="0.944444" />
+                            <point x="0.492063" y="1" />
+                            <point x="0.142857" y="0.944444" />
+                            <point x="0.285714" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Key" sid="356908400399688">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="757768916716129" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\pixel-art-key_1958346.png">
+                        <collision-poly>
+                            <point x="0.0921053" y="0.2" />
+                            <point x="0.5" y="0.3" />
+                            <point x="0.861842" y="0.3" />
+                            <point x="1" y="0.5" />
+                            <point x="0.953947" y="0.9" />
+                            <point x="0.5" y="0.7" />
+                            <point x="0.0855263" y="0.814286" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Chef" sid="550496300178600">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="collis" sid="345577719069410" type="number" />
+                <instance-variable name="count_walk" sid="881283751504049" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="413286545547252">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="806463875483998" speed="5">
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\CHEF.png">
+                        <collision-poly>
+                            <point x="0.0232558" y="0.00909091" />
+                            <point x="0.488372" y="0" />
+                            <point x="0.72093" y="0.109091" />
+                            <point x="0.860465" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.488372" y="1" />
+                            <point x="0.209302" y="0.918182" />
+                            <point x="0.209302" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Border" sid="856021114648735">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="797206611642483" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door" sid="905085023811911">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="748147173132907">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="393100991130079" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\DOOR1.png" />
+                </animation>
+                <animation framecount="6" loop="0" name="Open" pingpong="0" repeatcount="1" repeatto="0" sid="783903565833385" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\DOOR2.png" />
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\DOOR3.png" />
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\DOOR4.png" />
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\DOOR5.png" />
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\DOOR6.png" />
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\STAGE_01\DOOR7.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Police" sid="245060233845952">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="alert" sid="951314958907998" type="number" />
+                <instance-variable name="collis" sid="376283889624319" type="number" />
+                <instance-variable name="action" sid="830757447774234" type="number" />
+                <instance-variable name="count_collis" sid="372700629119917" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="317725509631528">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="240146323287387">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="538793040275930" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\JAILER\STAND_J (1).png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.155556" />
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Talk" pingpong="0" repeatcount="3" repeatto="0" sid="469916334586648" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\JAILER\STAND_J (2).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\JAILER\STAND_J (3).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\JAILER\STAND_J (4).png" />
+                </animation>
+                <animation framecount="4" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="667879732401370" speed="4">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\JAILER\WALK_J (1).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\JAILER\WALK_J (2).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\JAILER\WALK_J (3).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Signt" sid="828006254180754">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="dir" sid="585654044562775" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="248048461415536">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="435726858201906" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.508197" original-source="E:\Bright\Work\IT&apos;57 ปี 3\เทอม 1\Computer Game Designer\Assignment\Img\Character\JAILER\VISION_Angel.png">
+                        <collision-poly>
+                            <point x="0.508772" y="0.803279" />
+                            <point x="0.0877193" y="0.918033" />
+                            <point x="0.0175439" y="0.508197" />
+                            <point x="0.0701754" y="0.0655738" />
+                            <point x="0.508772" y="0.196721" />
+                            <point x="0.684211" y="0.295082" />
+                            <point x="1" y="0.508197" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GameOver" sid="932476001044206">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextSprite" sid="864759729320684">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Slot" sid="623444572857496">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="611460357337259" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\wachi\Desktop\Assignment\Img\STAGE_01\ITEM_SLOT.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Item_Slot" sid="915788482163231">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="147785351485865" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\wachi\Desktop\Assignment\Img\STAGE_01\ITEM_SLOT01.png">
+                        <collision-poly>
+                            <point x="0.0576923" y="0.0961538" />
+                            <point x="0.942308" y="0.0961538" />
+                            <point x="0.942308" y="0.903846" />
+                            <point x="0.0576923" y="0.903846" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\wachi\Desktop\Assignment\Img\STAGE_01\ITEM_SLOT02.png">
+                        <collision-poly>
+                            <point x="0" y="0.0384615" />
+                            <point x="1" y="0.0384615" />
+                            <point x="1" y="0.961538" />
+                            <point x="0" y="0.961538" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\wachi\Desktop\Assignment\Img\STAGE_01\ITEM_SLOT03.png">
+                        <collision-poly>
+                            <point x="0.0769231" y="0" />
+                            <point x="0.923077" y="0" />
+                            <point x="0.923077" y="1" />
+                            <point x="0.0769231" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="stair" sid="940045563328143">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="climb" sid="593634008914614" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="785192481965298" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500835" original-source="E:\Assignment\Img\STAGE_02\staircase.png">
+                        <collision-poly>
+                            <point x="0.409859" y="0.48581" />
+                            <point x="0.5" y="0.375626" />
+                            <point x="1" y="0" />
+                            <point x="0.712676" y="0.499165" />
+                            <point x="0.5" y="0.754591" />
+                            <point x="0" y="1" />
+                            <point x="0.387324" y="0.499165" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="floor2" sid="413796101736944">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="766102368849037">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="172572984080248" speed="5">
+                    <frame duration="1" hotspotX="0.517385" hotspotY="0.5" original-source="E:\Assignment\Img\STAGE_02\FLOOR0002.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="floorground" sid="516317209800188">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="443862381998009">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="250371895595379" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Assignment\Img\STAGE_02\FLOOR.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="door_exit" sid="812545208470074">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="280282942858686" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\DOOREXIT.png" />
+                </animation>
+                <animation framecount="3" loop="0" name="open" pingpong="0" repeatcount="1" repeatto="0" sid="647740023755598" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\DOOR_HIDE0000002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\DOOREXIT0000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="box" sid="452400969369700">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="776790987494190" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\BOX.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\BOX2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="door_hide" sid="929268090371418">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="hide" sid="998672246675572" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="155107673419942">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="382437451091028" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\DOOR.png" />
+                </animation>
+                <animation framecount="3" loop="0" name="open1" pingpong="0" repeatcount="1" repeatto="0" sid="882359130096583" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\DOOR000000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\DOOR0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\DOOR.png" />
+                </animation>
+                <animation framecount="2" loop="0" name="open2" pingpong="0" repeatcount="1" repeatto="0" sid="546577838822439" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\DOOR.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="switch" sid="442736132690818">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="status" sid="646248727601856" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="354956428929111" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\Press_EX2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\Press_EX.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="exit" sid="892873187497971">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="161967740809996" speed="5">
+                    <frame duration="1" hotspotX="0.507937" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\EXIT.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jail1" sid="887935990317083">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="840198630298385" speed="5">
+                    <frame duration="1" hotspotX="0.501718" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\PRISON_0.png" />
+                </animation>
+                <animation framecount="3" loop="0" name="open" pingpong="0" repeatcount="1" repeatto="0" sid="763060821666965" speed="10">
+                    <frame duration="1" hotspotX="0.501718" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\PRISON_0_2.png" />
+                    <frame duration="1" hotspotX="0.501718" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\PRISON_0_3.png" />
+                    <frame duration="1" hotspotX="0.501718" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\PRISON_0_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jail2" sid="302212497530085">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="982870367480001" speed="5">
+                    <frame duration="1" hotspotX="0.501718" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\PRISON_1.png" />
+                </animation>
+                <animation framecount="3" loop="0" name="open" pingpong="0" repeatcount="1" repeatto="0" sid="904839592259636" speed="10">
+                    <frame duration="1" hotspotX="0.501718" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\PRISON_1_2.png" />
+                    <frame duration="1" hotspotX="0.501718" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\PRISON_1_3.png" />
+                    <frame duration="1" hotspotX="0.501718" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\PRISON_1_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jail3" sid="230442466765300">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="181752396303008" speed="5">
+                    <frame duration="1" hotspotX="0.501718" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\PRISON_2.png" />
+                </animation>
+                <animation framecount="3" loop="0" name="open" pingpong="0" repeatcount="1" repeatto="0" sid="601481289325554" speed="10">
+                    <frame duration="1" hotspotX="0.501718" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\PRISON_2_2.png" />
+                    <frame duration="1" hotspotX="0.501718" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\PRISON_2_3.png" />
+                    <frame duration="1" hotspotX="0.501718" hotspotY="0.5" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\PRISON_2_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="floor3" sid="209719177428198">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="161521644112457">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="559671563869264" speed="5">
+                    <frame duration="1" hotspotX="0.523944" hotspotY="0.5" original-source="E:\Assignment\Img\STAGE_02\FLOOR0002.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="camera" sid="833644113106611">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="des" sid="855748750926328" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="664252358541819">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544498151386902" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lv1_hwp1" sid="243482952653107">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984367233818063" speed="0">
+                    <frame duration="1" hotspotX="0.500697" hotspotY="0.501672" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_01\Alert1.png" />
+                    <frame duration="1" hotspotX="0.500697" hotspotY="0.501672" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_01\Alert2.png" />
+                    <frame duration="1" hotspotX="0.500697" hotspotY="0.501672" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_01\Alert3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="241151736916884">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="select" sid="183191475537746">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="719893683374373" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="balloon1" sid="839680697801858">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="770082326680353" speed="5">
+                    <frame duration="1" hotspotX="0.176871" hotspotY="0.990566" original-source="C:\Users\Pooh\Desktop\Assignment2\Ballon2.png">
+                        <collision-poly>
+                            <point x="0.128099" y="0.155779" />
+                            <point x="0.5" y="0" />
+                            <point x="0.871901" y="0.155779" />
+                            <point x="1" y="0.497487" />
+                            <point x="0.842975" y="0.809045" />
+                            <point x="0.5" y="0.934673" />
+                            <point x="0.157025" y="0.809045" />
+                            <point x="0" y="0.497487" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lv2_hwp2" sid="966791608870635">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="520914887416641" speed="0">
+                    <frame duration="1" hotspotX="0.500697" hotspotY="0.501672" original-source="C:\Users\Peerapat\Desktop\Assignment\Img\STAGE_02\Alert4.png" />
+                    <frame duration="1" hotspotX="0.500697" hotspotY="0.501672" original-source="F:\Construc2Assign\Character\Alert5.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Border2" sid="179194961269601">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="374616335477764" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="463019729062875">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Building" sid="189706897040168">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="494869089908121">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="130602023455307" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501144" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\Building_0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501144" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\Building_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501144" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\Building_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501144" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\Building_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501144" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\Building_4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501144" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\Building_5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501144" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\Building_6.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player3" sid="205518906752206">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Spoon" sid="594189442218855" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="249347358171455">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="174486030455165">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="785689861601382">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="519943616006771" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_Suit\TopVPlayer_Suit_Stage3_0000_Layer-1.png">
+                        <image-point name="Imagepoint 1" x="0.8125" y="0.5" />
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_Suit\TopVPlayer_Suit_Stage3_0001_Layer-2.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_Suit\TopVPlayer_Suit_Stage3_0002_Layer-3.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_Suit\TopVPlayer_Suit_Stage3_0003_Layer-4.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_Suit\TopVPlayer_Suit_Stage3_0004_Layer-5.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_Suit\TopVPlayer_Suit_Stage3_0005_Layer-6.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_Suit\TopVPlayer_Suit_Stage3_0006_Layer-7.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_Suit\TopVPlayer_Suit_Stage3_0007_Layer-8.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="8" loop="1" name="Suit" pingpong="0" repeatcount="1" repeatto="0" sid="939407822795915" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_SuitChenged\TopVPlayer_SuitChenged_Stage3_0000_Layer-1.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_SuitChenged\TopVPlayer_SuitChenged_Stage3_0001_Layer-2.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_SuitChenged\TopVPlayer_SuitChenged_Stage3_0002_Layer-3.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_SuitChenged\TopVPlayer_SuitChenged_Stage3_0003_Layer-4.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_SuitChenged\TopVPlayer_SuitChenged_Stage3_0004_Layer-5.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_SuitChenged\TopVPlayer_SuitChenged_Stage3_0005_Layer-6.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_SuitChenged\TopVPlayer_SuitChenged_Stage3_0006_Layer-7.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPlayer_SuitChenged\TopVPlayer_SuitChenged_Stage3_0007_Layer-8.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door3" sid="103988557678106">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="557937891525954">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="847226916126043" speed="5">
+                    <frame duration="1" hotspotX="0.909732" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\ExitWall.png">
+                        <collision-poly>
+                            <point x="0.0324401" y="0.328571" />
+                            <point x="0.499295" y="0.328571" />
+                            <point x="0.978843" y="0.214286" />
+                            <point x="1" y="0.5" />
+                            <point x="0.987306" y="0.871429" />
+                            <point x="0.499295" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Wall" sid="572685935616716">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="485449099317473">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Police3" sid="171720748092449">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Alert" sid="557431253445879" type="boolean" />
+                <instance-variable name="Direc" sid="662959507600749" type="number" />
+                <instance-variable name="Action" sid="348243901596865" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="520777912137541">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="164465733787682">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="500742804446234">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="164846084523692" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0000_Layer-1.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0001_Layer-2.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0002_Layer-3.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0003_Layer-4.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0004_Layer-5.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0005_Layer-6.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0006_Layer-7.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0007_Layer-8.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Prison" sid="609432774171552">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="124801457986257">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="400410579069406">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="138531104977682" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPrisoner_NotPlayer\TopVPrisoner_Stage3_0000_Layer-1.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPrisoner_NotPlayer\TopVPrisoner_Stage3_0001_Layer-2.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPrisoner_NotPlayer\TopVPrisoner_Stage3_0002_Layer-3.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPrisoner_NotPlayer\TopVPrisoner_Stage3_0003_Layer-4.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPrisoner_NotPlayer\TopVPrisoner_Stage3_0004_Layer-5.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPrisoner_NotPlayer\TopVPrisoner_Stage3_0005_Layer-6.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPrisoner_NotPlayer\TopVPrisoner_Stage3_0006_Layer-7.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\TopVPrisoner_NotPlayer\TopVPrisoner_Stage3_0007_Layer-8.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Police4" sid="109180442057809">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Alert" sid="723373884567806" type="boolean" />
+                <instance-variable name="Direc" sid="360484664074208" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="187919259355632">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Pathfinding" sid="502025115699779">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="844194398175491" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0000_Layer-1.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0001_Layer-2.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0002_Layer-3.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0003_Layer-4.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0004_Layer-5.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0005_Layer-6.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0006_Layer-7.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\TOPVIEW_Stage3\JAILERTOP_MOVE\JAILERTOP_MOVE_0007_Layer-8.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Car" sid="494679525174356">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="SpawnPolice" sid="403258197023918" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="496772655032246" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.50303" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\Jailer_Car.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="960320405489704">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="437490374024557">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="532849476843560" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\Tree02.png">
+                        <collision-poly>
+                            <point x="0.153846" y="0.153846" />
+                            <point x="0.5" y="0.115385" />
+                            <point x="0.884615" y="0.115385" />
+                            <point x="1" y="0.5" />
+                            <point x="0.884615" y="0.884615" />
+                            <point x="0.5" y="1" />
+                            <point x="0.115385" y="0.884615" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Grass01" sid="573688548012809">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\GRASS03.png" />
+        </object-type>
+        <object-type name="Ground01" sid="994198649593992">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\Graound03.png" />
+        </object-type>
+        <object-type name="Grass02" sid="966315276567707">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="102759883183968" speed="5">
+                    <frame duration="1" hotspotX="0.53125" hotspotY="0.53125" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\GRASS01.png">
+                        <collision-poly>
+                            <point x="0.238095" y="0.238095" />
+                            <point x="0.47619" y="0.142857" />
+                            <point x="0.857143" y="0.142857" />
+                            <point x="1" y="0.47619" />
+                            <point x="1" y="1" />
+                            <point x="0.47619" y="1" />
+                            <point x="0.0952381" y="0.904762" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Grass03" sid="855612105548357">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\GRASS02.png" />
+        </object-type>
+        <object-type name="Congreat" sid="999303235501661">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\Congreat.png02.png" />
+        </object-type>
+        <object-type name="Grass04" sid="856301156926798">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="587539130713945" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\GRASS04.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.5625" y="0.5625" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Group" sid="990146227419836">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="GroupX" sid="539274984722286" type="number" />
+                <instance-variable name="GroupY" sid="315370573907564" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="710770212400352" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Signt3" sid="310938290846994">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="536343303660448">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="419761767020387" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\Character\15555755_1244081285658721_1404878983_n.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.177778" />
+                            <point x="0.8" y="0.111111" />
+                            <point x="0.98" y="0.5" />
+                            <point x="0.8" y="0.888889" />
+                            <point x="0.5" y="0.8" />
+                            <point x="0.44" y="0.755556" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Finish" sid="840937672749314">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Basketball" sid="441359670217796">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="139624372727405" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501119" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\BasCourt.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="People" sid="596352119382975">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="895882079454902">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="251314199392087">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="504881136781502" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\People.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\People1.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\People2.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\People3.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\wachi\Desktop\Construc2Assign\STAGE_03_04\People4.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="font_time" sid="103344636214358">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Tap" sid="317152186891291">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground" sid="392603900311105">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Construc2Assign\prison.png" />
+        </object-type>
+        <object-type name="btn_newgame" sid="566163164737555">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="727594933804652" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="E:\Construc2Assign\ButtonStart_NewGame.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_stage" sid="452483089692594">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341522548985393" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="E:\Construc2Assign\ButtonSelectStage.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_stage1" sid="193341126054210">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Grayscale">
+                    <effect id="grayscale" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="236344502865795" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="E:\Construc2Assign\Buttontage01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_stage2" sid="294702853579346">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Grayscale">
+                    <effect id="grayscale" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145824231348503" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="E:\Construc2Assign\Buttontage02.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_stage3" sid="356274693359313">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Grayscale">
+                    <effect id="grayscale" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="229773636054999" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="E:\Construc2Assign\Buttontage03.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_stage4" sid="724590051800770">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Grayscale">
+                    <effect id="grayscale" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="265800082027662" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="E:\Construc2Assign\Buttontage04.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_gomain" sid="823082385943672">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="841953944478982" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="E:\Construc2Assign\ButtonToMainPage.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="396698938234153">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Construc2Assign\StageSelect_Page.png" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="683934901689138">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Construc2Assign\Over_PIC.png" />
+        </object-type>
+        <object-type name="btn_again" sid="115557576927609">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="848071867896585" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="E:\Construc2Assign\ButtonPlay_Again.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground4" sid="610941535167140">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Construc2Assign\WINPage.png" />
+        </object-type>
+        <object-type name="Pause" sid="614103397899294">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Construc2Assign\PauseBG.png" />
+        </object-type>
+        <object-type name="btn_continue" sid="248529308318450">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="772270630344549" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="E:\Construc2Assign\ButtonContinue.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pause_txt" sid="862908007092234">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="526725171958723" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804" original-source="E:\Construc2Assign\PauseTXT.png">
+                        <collision-poly>
+                            <point x="0.00549451" y="0.0196078" />
+                            <point x="0.994505" y="0.0196078" />
+                            <point x="1" y="0.490196" />
+                            <point x="0.912088" y="0.686275" />
+                            <point x="0.5" y="0.176471" />
+                            <point x="0.126374" y="0.54902" />
+                            <point x="0.0164835" y="0.490196" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Border3" sid="463801326475326">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="850756941439876" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="balloon2" sid="778088900780130">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="676302334100259" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pooh\Desktop\Assignment2\Ballon.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lv3_hwp3" sid="638363898199539">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="428522647547643" speed="5">
+                    <frame duration="1" hotspotX="0.500697" hotspotY="0.501672" original-source="F:\Construc2Assign\Character\Alert6.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lv4_hwp4" sid="294214026215943">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794492927887103" speed="5">
+                    <frame duration="1" hotspotX="0.500697" hotspotY="0.501672" original-source="F:\Construc2Assign\Character\Alert7.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LocalStorage" sid="898323374358050">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="btn_continue_main" sid="899444628005863">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Grayscale">
+                    <effect id="grayscale" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="465356683158375" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="E:\Construc2Assign\ButtonContinue.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="item" plugin-id="Sprite" sid="825610891214848">
+            <members>
+                <member>Clothe</member>
+                <member>Key</member>
+                <member>Spoon</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="slot" sid="929183670102967" type="number" />
+            </instance-variables>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Level 1.xml</layout>
+        <layout>Level 2.xml</layout>
+        <layout>Level 3.xml</layout>
+        <layout>Level 4.xml</layout>
+        <layout>Main.xml</layout>
+        <layout>Stage.xml</layout>
+        <layout>Layout 1.xml</layout>
+        <layout>Over.xml</layout>
+        <layout>Win.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event Level 1.xml</event-sheet>
+        <event-sheet>Event Level 2.xml</event-sheet>
+        <event-sheet>Event Level 3.xml</event-sheet>
+        <event-sheet>Event Level 4.xml</event-sheet>
+        <event-sheet>Event Main.xml</event-sheet>
+        <event-sheet>Event Stage.xml</event-sheet>
+        <event-sheet>Event Over.xml</event-sheet>
+        <event-sheet>Event Win.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Mouse" uid="102" />
+        <global-instance type="Audio" uid="106">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="LocalStorage" uid="260" />
+    </global-instances>
+    <sounds-folder>
+        <file name="footstep.m4a" />
+        <file name="busy.m4a" />
+        <file name="silen.m4a" />
+        <file name="button-3.m4a" />
+        <file name="Dramatic.m4a" />
+        <file name="music.m4a" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
